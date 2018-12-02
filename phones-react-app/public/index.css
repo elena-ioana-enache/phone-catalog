@@ -1,0 +1,78 @@
+/* As hex codes */
+
+.color-primary-0 { color: #512C73 }	/* Main Primary color */
+.color-primary-1 { color: #9277AC }
+.color-primary-2 { color: #6F4D8F }
+.color-primary-3 { color: #361356 }
+.color-primary-4 { color: #200439 }
+
+body {
+  margin: 0;
+  background-color:antiquewhite;
+}
+header{
+  background-color: #9277AC ;
+  color: #200439 ;
+  text-align: center;
+  font: bold 35px "Arial";
+  text-indent: 40px;
+  line-height: 50px;
+}
+footer{
+  background-color:#6F4D8F;
+  color: #361356 ;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  font: 12px "Arial";
+  line-height: 20px;
+}
+main{
+  padding-top:30px;
+}
+.pageCenter {
+  position: absolute;
+  z-index: 15;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  font-size:100px;
+
+}
+.title{
+  color: #200439;
+  margin: 30px;
+}
+.listItem{
+  list-style-type: none;
+  height: 60px;
+  width: 200px;
+
+  text-align: left;
+  background-color: #9277AC;
+  font-size:20px;
+  display: table;
+}
+.listItem div{
+  vertical-align: middle;
+  display: table-cell;
+  padding-left:10px;
+}
+.listItem div:hover{
+  color: #9277AC;
+  background-color: #200439;
+}
+.backButton{
+  color:#361356;
+  background-color:#9277AC;
+  width: 80px;
+  height: 50px;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+}

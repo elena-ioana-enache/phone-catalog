@@ -1,0 +1,25 @@
+{
+    "phonesList": [
+        {
+            "id": "1",
+            "title": "Ifone7",
+            "description": "Apple iPhone 7 Plus 256GB negro",
+            "color": "negro",
+            "price": "1.323,78€"
+        },
+        {
+            "id": "2",
+            "title": "Samsung",
+            "description": "Galaxy S7 edge",
+            "color": "azul",
+            "price": "1.223,78€"
+        },
+        {
+            "id": "3",
+            "title": "Nokia",
+            "description": "Nokia X6, from the house of reputed mobile brand Nokia",
+            "color": "negro",
+            "price": "1.000€"
+        }
+    ]
+}
