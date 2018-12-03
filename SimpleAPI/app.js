@@ -9,6 +9,5 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var routes = require("./routes/routes.js")(app);
 
 
-var server = app.listen(3001, function () {
-    console.log("Listening on port %s...", server.address().port);
-});
+var server = app.listen(3001, '0.0.0.0');
+console.log('Running on 3001');

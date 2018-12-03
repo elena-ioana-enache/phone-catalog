@@ -6,7 +6,7 @@ var appRouter = function (app) {
             phoneList = appendImagesToPhoneList(phoneList.phonesList);
             return res.send(phoneList);
 
-        }, 3000);
+        }, 0);
 
     });
 

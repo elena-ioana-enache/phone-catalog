@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+
+  phones-react-app:
+    container_name: phones-react-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/usr/src/react-app'
+      - '/usr/src/react-app/node_modules'
+    ports:
+      - '3000:3000'
+    networks:
+      - proxynet
+    environment:
+      - NODE_ENV=development
+
+networks:
+  proxynet:
+    driver: bridge
