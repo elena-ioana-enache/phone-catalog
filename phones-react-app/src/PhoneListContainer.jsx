@@ -1,8 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import PhoneDetail from './PhoneDetail';
-
-
+import css from './less/PhoneCatalog.less';
 
 
 export default class PhoneListContainer extends React.Component {
@@ -43,9 +42,9 @@ export default class PhoneListContainer extends React.Component {
 
     return (
       <div>
-        <div style={{ "display": this.state.isPageLoaded ? "none" : "block" }}> <i className="fa fa-refresh fa-spin pageCenter" ></i></div>
+        <div style={{ "display": this.state.isPageLoaded ? "none" : "block" }} className={css.pageCenter} > <i class="fa fa-refresh fa-spin"></i></div>
         <div style={{ "display": this.state.phoneListVisible ? "block" : "none" }}>
-          <h1 className="title"><i className="fas fa-mobile-alt"></i>
+          <h1 className={css.title}><i className="fas fa-mobile-alt"></i>
             Phone list
         </h1>
           <ul>
@@ -54,11 +53,11 @@ export default class PhoneListContainer extends React.Component {
               <li
                 key={phone.id}
                 onClick={this.onPhoneClick.bind(this, phone)}
-                className="listItem"
+                className={css.listItem}
               >
-                <div> 
-                  <span>{phone.title+"  "+phone.price}</span>
-                
+                <div>
+                  <span>{phone.title + "  " + phone.price}</span>
+
                 </div>
               </li>
 

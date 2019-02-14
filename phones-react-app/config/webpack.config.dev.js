@@ -47,11 +47,14 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
         importLoaders: 1,
       },
     },
+    /*
     require.resolve('style-loader'),
     {
       loader: require.resolve('css-loader'),
       options: cssOptions,
     },
+    */
+    /*
     {
       // Options for PostCSS as we reference these options twice
       // Adds vendor prefixing based on your specified browser support in
@@ -72,6 +75,7 @@ const getStyleLoaders = (cssOptions, preProcessor) => {
         ],
       },
     },
+    */
   ];
   if (preProcessor) {
     loaders.push(require.resolve(preProcessor));
@@ -198,6 +202,14 @@ module.exports = {
           },
         ],
         include: paths.appSrc,
+      },
+      { //added to parse less files
+        test: /\.less$/,
+        use: [
+          "style-loader",
+          "css-loader?modules&-minimize&localIdentName=[name]-[local]",
+          "less-loader"
+        ],
       },
       {
         // "oneOf" will traverse all following loaders until one will

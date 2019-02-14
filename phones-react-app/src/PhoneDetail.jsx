@@ -1,5 +1,5 @@
 import React from 'react';
-
+import css from './less/PhoneCatalog.less';
 
 export default class PhoneDetail extends React.Component {
 
@@ -25,7 +25,7 @@ export default class PhoneDetail extends React.Component {
                     <div>{this.props.phone.price}</div>
                     <div>{this.props.phone.description}</div>
                 </div>
-                <input  className="backButton" type="button" value="Back" onClick={this.onClickBack.bind(this)} />
+                <input className={css.backButton} type="button" value="Back" onClick={this.onClickBack.bind(this)} />
             </div>
         );
     }
